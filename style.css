@@ -1,0 +1,29 @@
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --primary-color: hsla(170, 100%, 26%, 1);
+  --secundary-color: hsla(210, 11%, 15%, 1);
+}
+
+body {
+  font-family: 'DM Sans';
+  font-size: 1.6rem; /* Transformo a fonte em 16px novamente */
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 3.4rem;
+  color: var(--secundary-color);
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+button {
+  background: var(--primary-color);
+}
