@@ -26,7 +26,7 @@
 
 html {
     /* chrome://flags/#smooth-scrolling */
-    /* Comportamento do scroll é suave */
+    /* Comportamento do scroll ï¿½ suave */
     scroll-behavior: smooth;
 }
 
@@ -431,7 +431,7 @@ footer {
 
     color: white;
 }
-/* Display inline não aceita margin, width, height */
+/* Display inline nï¿½o aceita margin, width, height */
 footer .logo {
     display: inline-block;
     margin-bottom: 2.4rem;
@@ -515,11 +515,11 @@ footer .social-links {
         opacity: initial;
         flex-direction: initial;
         position: initial;
+        font-size: initial;
+        font-weight: initial;
         transform: initial;
         color: initial;
         background-color: initial;
-        font-size: initial;
-        font-weight: initial;
         filter: initial;
     }
 
@@ -546,7 +546,6 @@ footer .social-links {
         line-height: 2.1rem;
 
         color: var(--primary-color);
-
         opacity: 0.7;
     }
 
@@ -587,6 +586,7 @@ footer .social-links {
         transition: opacity 0.4s;
     }
 
+    nav#navigation .menu li a.active,
     nav#navigation .menu li a:hover {
         opacity: 1;
         font-weight: 700;
@@ -611,6 +611,7 @@ footer .social-links {
         background-color: white;
     }
 
+    nav#navigation .menu li a.active::after,
     nav#navigation .menu li a:hover::after {
         width: 100%;
         padding-inline: 1.3rem;
@@ -644,7 +645,7 @@ footer .social-links {
 
     #home .col-a {
         text-align: left;
-        /* Alinha os conteúdos da coluna A ao centro: */
+        /* Alinha os conteï¿½dos da coluna A ao centro: */
         align-self: center;
     }
 
@@ -670,7 +671,7 @@ footer .social-links {
     }
 
     #home .stats .stat {
-        /* Preenchendo por igual, de acordo com a caixa mãe */
+        /* Preenchendo por igual, de acordo com a caixa mï¿½e */
         flex: 1;
     }
 
@@ -696,7 +697,7 @@ footer .social-links {
 
     #services .card {
         width: 30%;
-        /* aumenta o card o suficiente para preencher o espaço restante */
+        /* aumenta o card o suficiente para preencher o espaï¿½o restante */
         flex-grow: 1;
     }
 
