@@ -4,11 +4,13 @@ onScroll()
 function onScroll() {
     showNavOnScroll()
     showBackToTopButtonOnScroll()
+    // turnBackToTopButtonOnScroll()
 
     activateMenuAtCurrentSection(home)
     activateMenuAtCurrentSection(services)
     activateMenuAtCurrentSection(about)
     activateMenuAtCurrentSection(contact)
+    console.log(scrollY)
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -22,7 +24,7 @@ function activateMenuAtCurrentSection(section) {
     const sectionHeight = section.offsetHeight
     const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
-    // informações dos dados e da lógica
+    // informações dos dados e da l�gica
 
     // verificar se a base está abaix a liha alvo
     // quais dados vou precisar?
@@ -57,6 +59,14 @@ function showBackToTopButtonOnScroll() {
         backToTopButton.classList.remove('show')
     }
 }
+
+// function turnBackToTopButtonOnScroll() {
+//     if (scrollY > 2650) {
+//         backToTopButton.classList.add('turn')
+//     } else {
+//         backToTopButton.classList.remove('turn')
+//     }
+// }
 
 function openMenu() {
     document.body.classList.add('menu-expanded')

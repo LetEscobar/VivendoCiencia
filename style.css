@@ -476,6 +476,14 @@ footer .social-links {
     transform: translateY(0);
 }
 
+/* #backToTopButton.turn circle {
+    fill: var(--bg-light);
+}
+
+#backToTopButton.turn path {
+    stroke: var(--primary-color);
+} */
+
 /* -------------- RESPONSIVO -------------- */
 @media (min-width: 1024px) {
     /* GERAL */
@@ -645,7 +653,7 @@ footer .social-links {
 
     #home .col-a {
         text-align: left;
-        /* Alinha os conte�dos da coluna A ao centro: */
+        /* Alinha os conteúdos da coluna A ao centro: */
         align-self: center;
     }
 
@@ -685,7 +693,7 @@ footer .social-links {
 
     /* SERVICES */
     #services h2 {
-        width: 47rem;
+        width: 50rem;
         margin-inline: auto;
     }
 
@@ -697,7 +705,7 @@ footer .social-links {
 
     #services .card {
         width: 30%;
-        /* aumenta o card o suficiente para preencher o espa�o restante */
+        /* aumenta o card o suficiente para preencher o espaço restante */
         flex-grow: 1;
     }
 
