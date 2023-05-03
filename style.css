@@ -489,11 +489,11 @@ footer .social-links {
     stroke: var(--primary-color);
 } */
 
-.linkTelegram {
+.linkContato {
     text-decoration: none;
     color: #000000;
 }
-.linkTelegram:hover {
+.linkContato:hover {
     cursor: pointer;
     text-decoration: underline;
 }
