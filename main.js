@@ -2,7 +2,7 @@ window.addEventListener('scroll', onScroll)
 
 onScroll()
 function onScroll() {
-    showNavOnScroll()
+    // showNavOnScroll()
     showBackToTopButtonOnScroll()
     // turnBackToTopButtonOnScroll()
 
@@ -10,7 +10,7 @@ function onScroll() {
     activateMenuAtCurrentSection(services)
     activateMenuAtCurrentSection(about)
     activateMenuAtCurrentSection(contact)
-    console.log(scrollY)
+    // console.log(scrollY)
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -44,14 +44,6 @@ function activateMenuAtCurrentSection(section) {
     }
 }
 
-function showNavOnScroll() {
-    if (scrollY > 0) {
-        navigation.classList.add('scroll')
-    } else {
-        navigation.classList.remove('scroll')
-    }
-}
-
 function showBackToTopButtonOnScroll() {
     if (scrollY > 550) {
         backToTopButton.classList.add('show')
@@ -59,14 +51,6 @@ function showBackToTopButtonOnScroll() {
         backToTopButton.classList.remove('show')
     }
 }
-
-// function turnBackToTopButtonOnScroll() {
-//     if (scrollY > 2650) {
-//         backToTopButton.classList.add('turn')
-//     } else {
-//         backToTopButton.classList.remove('turn')
-//     }
-// }
 
 function openMenu() {
     document.body.classList.add('menu-expanded')

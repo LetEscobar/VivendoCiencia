@@ -6,9 +6,6 @@
 }
 
 :root {
-    --test: hsl(2, 96%, 78%);
-    --test2: hsl(354, 77%, 30%);
-
     --hue: 2;
 
     --primary-color: hsl(var(--hue), 77%, 35%);
@@ -28,8 +25,6 @@
 }
 
 html {
-    /* chrome://flags/#smooth-scrolling */
-    /* Comportamento do scroll � suave */
     scroll-behavior: smooth;
 }
 
@@ -41,7 +36,7 @@ body {
 
 body {
     font-family: 'DM Sans';
-    font-size: 1.6rem; /* Transformo a fonte em 16px novamente */
+    font-size: 1.6rem;
 
     text-align: center;
 
@@ -60,8 +55,12 @@ ul {
     list-style: none;
 }
 
-img {
+img:not(#logo-menu) {
     max-width: 100%;
+}
+
+#logo-menu {
+    width: 80%;
 }
 
 section {
@@ -480,14 +479,6 @@ footer .social-links {
     visibility: visible;
     transform: translateY(0);
 }
-
-/* #backToTopButton.turn circle {
-    fill: var(--bg-light);
-}
-
-#backToTopButton.turn path {
-    stroke: var(--primary-color);
-} */
 
 .linkContato {
     text-decoration: none;
