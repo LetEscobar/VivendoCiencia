@@ -24,7 +24,7 @@ function activateMenuAtCurrentSection(section) {
     const sectionHeight = section.offsetHeight
     const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
-    // informações dos dados e da l�gica
+    // informações dos dados e da l�gica
 
     // verificar se a base está abaix a liha alvo
     // quais dados vou precisar?
