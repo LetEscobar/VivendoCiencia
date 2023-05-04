@@ -716,6 +716,7 @@ footer .social-links {
     #services .card {
         width: 40%;
         display: flex;
+        justify-content: space-between;
         /* aumenta o card o suficiente para preencher o espaço restante */
         flex-grow: 1;
     }
