@@ -708,10 +708,20 @@ footer .social-links {
         gap: 4rem;
     }
 
-    #services .card {
+    #services .card img {
         width: 30%;
+        box-shadow: 1px 1px 10px #cacaca;
+    }
+
+    #services .card {
+        width: 40%;
+        display: flex;
         /* aumenta o card o suficiente para preencher o espaço restante */
         flex-grow: 1;
+    }
+
+    #services .text-card {
+        display: block;
     }
 
     /* ABOUT */
