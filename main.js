@@ -75,3 +75,34 @@ ScrollReveal({
     #about header
     #about .content`
 )
+
+
+const cards = document.querySelectorAll('.card')
+const cardsContainer = document.querySelector('.cards')
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        // verifica se já tá selecionado e remove a classe
+        if (card.classList.contains('selected')) {
+            card.classList.remove('selected')
+            card.style.backgroundColor = '#ffffff'
+            card.style.border = '1px solid hsl(calc(var(--hue) - 22), 23%, 89%)'
+        } else {
+            // se não tiver selecionado, adiciona a classe
+            card.classList.add('selected')
+            card.style.backgroundColor = '#56f86c'
+            card.style.border = '1px solid #008b00'
+        }
+    })
+})
+
+//a leticia é muito linda <3
+
+
+const selectedCards = []
+// guarda em selectedCards os cards que estão selecionados
+function getSelectedCards() {
+    const cards = document.querySelectorAll('.card.selected')
+    cards.forEach(card => {
+        selectedCards.push(card)
+    })
+}
