@@ -522,9 +522,9 @@ footer .social-links {
         grid-area: B;
     }
 
-    section {
+    /* section {
         padding-block: 16rem;
-    }
+    } */
 
     section header h2 {
         font-size: 4rem;
