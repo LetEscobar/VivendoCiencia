@@ -496,6 +496,22 @@
                         <img src="./atividades/16.png" alt="" />
                     </div>
                 </div>
+                <a class="button open-modal-btn" id="button-cart">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        style="fill: rgba(255, 255, 255, 1)"
+                    >
+                        <path
+                            d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"
+                        ></path>
+                        <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                        <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                    </svg>
+                    Finalizar compra
+                </a>
             </div>
         </section>
 
@@ -777,6 +793,74 @@
                 />
             </svg>
         </a>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Finalize sua compra</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"
+                            >E-mail que deseja receber os materias:</label
+                        >
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instagram"
+                            >Perfil do Instagram ou número do WhatsApp:</label
+                        >
+                        <input
+                            type="text"
+                            id="instagram"
+                            name="instagram"
+                            required
+                        />
+                    </div>
+
+                    <p class="texto-termos">
+                        Chave PIX: profvivendo.ciencia@gmail.com <br />*Caso
+                        encontre alguma dificuldade, entre em contato comigo no
+                        Instagram 🙂
+                    </p>
+                    <div class="form-group">
+                        <label for="comprovante"
+                            >Comprovante de Pagamento (PIX):</label
+                        >
+                        <input
+                            type="file"
+                            id="comprovante"
+                            name="comprovante"
+                            required
+                        />
+                    </div>
+
+                    <p class="texto-termos">
+                        Os materiais presentes nessa lojinha foram produzidos
+                        com muito amor e dedicação pela professora Samara Thainá
+                        G. Pereira. Você está ciente de que não pode repassá-los
+                        para terceiros?
+                    </p>
+                    <div class="form-group termos-de-uso">
+                        <input
+                            type="checkbox"
+                            id="termos"
+                            name="termos"
+                            required
+                        />
+                        <label for="termos">Sim, estou ciente.</label>
+                    </div>
+
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+        </div>
 
         <!-- ScrollReavel Lib -->
         <script src="https://unpkg.com/scrollreveal"></script>

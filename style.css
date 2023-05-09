@@ -137,6 +137,16 @@ section .content p {
     gap: 3.2rem;
 }
 
+#button-cart {
+    background-color: rgb(0, 139, 0);
+    margin-inline: auto;
+    margin-top: 3.2rem;
+}
+#button-cart:hover {
+    background-color: rgb(0, 105, 0);
+    cursor: pointer;
+}
+
 /* custom colors */
 #services .card circle {
     fill: var(--brand-light);
@@ -385,6 +395,8 @@ body.menu-expanded button path {
 
     border: 1px solid var(--brand-light);
     border-radius: 0.6rem;
+
+    cursor: pointer;
 }
 
 #services .card h3 {
@@ -774,4 +786,101 @@ footer .social-links {
         align-self: center;
         justify-self: flex-end;
     }
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 7% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+}
+
+.modal-content h2 {
+    margin-bottom: 2rem;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.texto-termos {
+    text-align: left;
+}
+
+.termos-de-uso {
+    display: flex;
+}
+
+#termos {
+    width: max-content;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='file'],
+.form-group input[type='checkbox'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.form-group input[type='checkbox'] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.form-group input[type='submit'] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type='submit']:hover {
+    background-color: #45a049;
 }

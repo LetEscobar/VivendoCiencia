@@ -76,7 +76,6 @@ ScrollReveal({
     #about .content`
 )
 
-
 const cards = document.querySelectorAll('.card')
 const cardsContainer = document.querySelector('.cards')
 cards.forEach(card => {
@@ -97,7 +96,6 @@ cards.forEach(card => {
 
 //a leticia é muito linda <3
 
-
 const selectedCards = []
 // guarda em selectedCards os cards que estão selecionados
 function getSelectedCards() {
@@ -105,4 +103,28 @@ function getSelectedCards() {
     cards.forEach(card => {
         selectedCards.push(card)
     })
+}
+
+// Obtém o botão e o modal
+var modal = document.getElementById('myModal')
+var btn = document.getElementsByClassName('open-modal-btn')[0]
+
+// Obtém o elemento <span> que fecha o modal
+var span = document.getElementsByClassName('close')[0]
+
+// Quando o botão é clicado, o modal é exibido
+btn.onclick = function () {
+    modal.style.display = 'block'
+}
+
+// Quando o usuário clica no <span> (x), o modal é fechado
+span.onclick = function () {
+    modal.style.display = 'none'
+}
+
+// Quando o usuário clica fora do modal, ele é fechado
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = 'none'
+    }
 }
