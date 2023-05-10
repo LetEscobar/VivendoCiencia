@@ -128,3 +128,15 @@ window.onclick = function (event) {
         modal.style.display = 'none'
     }
 }
+
+const fileInput = document.getElementById('comprovante')
+const fileNameSpan = document.getElementById('file-name')
+
+fileInput.addEventListener('change', function () {
+    if (fileInput.files.length > 0) {
+        const fileName = fileInput.files[0].name
+        fileNameSpan.textContent = fileName
+    } else {
+        fileNameSpan.textContent = ''
+    }
+})

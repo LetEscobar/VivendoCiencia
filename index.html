@@ -13,6 +13,10 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
 
         <link
             rel="shortcut icon"
@@ -799,7 +803,11 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Finalize sua compra</h2>
-                <form>
+                <form
+                    method="post"
+                    action="enviar_formulario.php"
+                    enctype="multipart/form-data"
+                >
                     <div class="form-group">
                         <label for="nome">Nome Completo:</label>
                         <input type="text" id="nome" name="nome" required />
@@ -807,7 +815,7 @@
 
                     <div class="form-group">
                         <label for="email"
-                            >E-mail que deseja receber os materias:</label
+                            >E-mail que deseja receber os materiais:</label
                         >
                         <input type="email" id="email" name="email" required />
                     </div>
@@ -824,29 +832,35 @@
                         />
                     </div>
 
-                    <p class="texto-termos">
-                        Chave PIX: profvivendo.ciencia@gmail.com <br />*Caso
-                        encontre alguma dificuldade, entre em contato comigo no
-                        Instagram 🙂
+                    <p class="chave-pix">
+                        Chave PIX: <mark>profvivendo.ciencia@gmail.com</mark>
                     </p>
-                    <div class="form-group">
-                        <label for="comprovante"
+
+                    <div class="file-input-wrapper">
+                        <label class="texto-comprovante" for="comprovante"
                             >Comprovante de Pagamento (PIX):</label
                         >
+                        <label for="comprovante" class="file-input-label">
+                            <i class="fas fa-upload"></i> Escolher Arquivo
+                        </label>
                         <input
                             type="file"
                             id="comprovante"
                             name="comprovante"
                             required
                         />
+                        <span id="file-name"></span>
                     </div>
 
                     <p class="texto-termos">
-                        Os materiais presentes nessa lojinha foram produzidos
+                        *Caso encontre alguma dificuldade, entre em contato
+                        comigo no Instagram 🙂 <br /><br />
+                        *Os materiais presentes nessa lojinha foram produzidos
                         com muito amor e dedicação pela professora Samara Thainá
                         G. Pereira. Você está ciente de que não pode repassá-los
                         para terceiros?
                     </p>
+
                     <div class="form-group termos-de-uso">
                         <input
                             type="checkbox"
@@ -857,7 +871,7 @@
                         <label for="termos">Sim, estou ciente.</label>
                     </div>
 
-                    <input type="submit" value="Enviar" />
+                    <input type="submit" value="Comprar" class="enviar-dados" />
                 </form>
             </div>
         </div>
