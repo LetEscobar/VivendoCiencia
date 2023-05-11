@@ -462,7 +462,8 @@ footer .logo path {
     fill: white;
 }
 
-footer p {
+footer p,
+.dinotech {
     color: var(--brand-beige);
     line-height: 2;
 
