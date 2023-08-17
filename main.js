@@ -96,13 +96,10 @@ cards.forEach(card => {
 
 //a leticia é muito linda <3
 
-const selectedCards = []
-// guarda em selectedCards os cards que estão selecionados
-function getSelectedCards() {
-    const cards = document.querySelectorAll('.card.selected')
-    cards.forEach(card => {
-        selectedCards.push(card)
-    })
+function updateSelectedCardsInput() {
+    document.getElementById('atividades').value = [
+        ...document.querySelectorAll('.card.selected h3')
+    ].map(e => e.innerText).join(', ')
 }
 
 // Obtém o botão e o modal

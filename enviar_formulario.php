@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recupere os dados do formulário
     $nome = $_POST["nome"];
     $email = $_POST["email"];
+    $atividades = $_POST["atividades"];
     $instagram = $_POST["instagram"];
     $comprovante_nome = $_FILES["comprovante"]["name"];
     $comprovante_temp = $_FILES["comprovante"]["tmp_name"];
@@ -30,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Subject = 'Novo pedido de compra';
     $mail->Body = "Nome: " . $nome . "\n";
     $mail->Body .= "E-mail: " . $email . "\n";
+    $mail->Body .= "Atividades: " . $atividades . "\n";
     $mail->Body .= "Perfil do Instagram ou número do WhatsApp: " . $instagram . "\n";
     $mail->Body .= "Comprovante de Pagamento em anexo. " . $comprovante . "\n";
 
