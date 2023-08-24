@@ -94,12 +94,16 @@ cards.forEach(card => {
     })
 })
 
-//a leticia é muito linda <3
-
 function updateSelectedCardsInput() {
     document.getElementById('atividades').value = [
         ...document.querySelectorAll('.card.selected h3')
     ].map(e => e.innerText).join(', ')
+}
+
+function getSelectedCardsValue() {
+    return [...document.querySelectorAll('.card.selected')]
+        .map(e => parseFloat(e.dataset.value))
+        .reduce((total, value) => total + value, 0)
 }
 
 // Obtém o botão e o modal
@@ -111,6 +115,7 @@ var span = document.getElementsByClassName('close')[0]
 
 // Quando o botão é clicado, o modal é exibido
 btn.onclick = function () {
+    document.getElementById('pix-value').innerText = getSelectedCardsValue().toLocaleString(undefined, { style: 'currency', currency: 'BRL' })
     modal.style.display = 'block'
 }
 

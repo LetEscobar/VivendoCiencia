@@ -289,7 +289,7 @@
                 </header>
 
                 <div class="cards">
-                    <div class="card" id="card1">
+                    <div class="card" id="card1" data-value="6">
                         <div class="text-card">
                             <svg
                                 width="24"
@@ -312,7 +312,7 @@
                         </div>
                         <img src="./atividades/2.png" alt="" />
                     </div>
-                    <div class="card" id="card2">
+                    <div class="card" id="card2" data-value="4">
                         <div class="text-card">
                             <svg
                                 width="24"
@@ -341,7 +341,7 @@
                         </div>
                         <img src="./atividades/9.png" alt="" />
                     </div>
-                    <div class="card" id="card3">
+                    <div class="card" id="card3" data-value="7">
                         <div class="text-card">
                             <svg
                                 width="24"
@@ -367,7 +367,7 @@
                         </div>
                         <img src="./atividades/10.png" alt="" />
                     </div>
-                    <div class="card" id="card4">
+                    <div class="card" id="card4" data-value="12">
                         <div class="text-card">
                             <svg
                                 width="24"
@@ -397,7 +397,7 @@
                         </div>
                         <img src="./atividades/11.png" alt="" />
                     </div>
-                    <div class="card" id="card5">
+                    <div class="card" id="card5" data-value="10">
                         <div class="text-card">
                             <svg
                                 width="24"
@@ -424,7 +424,7 @@
                         </div>
                         <img src="./atividades/13.png" alt="" />
                     </div>
-                    <div class="card" id="card6">
+                    <div class="card" id="card6" data-value="3.5">
                         <div class="text-card">
                             <svg
                                 width="24"
@@ -450,7 +450,7 @@
                         </div>
                         <img src="./atividades/14.png" alt="" />
                     </div>
-                    <div class="card" id="card7">
+                    <div class="card" id="card7" data-value="15">
                         <div class="text-card">
                             <svg
                                 width="24"
@@ -476,7 +476,7 @@
                         </div>
                         <img src="./atividades/15.png" alt="" />
                     </div>
-                    <div class="card" id="card8">
+                    <div class="card" id="card8" data-value="5">
                         <div class="text-card">
                             <svg
                                 width="24"
@@ -841,14 +841,20 @@
                         />
                     </div>
 
-                    <p class="chave-pix">
-                        Chave PIX: <mark>profvivendo.ciencia@gmail.com</mark>
-                    </p>
+                    <div class="form-group">
+                        <p class="chave-pix">
+                            Chave PIX: <mark>profvivendo.ciencia@gmail.com</mark>
+                        </p>
+
+                        <p class="chave-pix">
+                            Valor do PIX: <span id='pix-value'>00,00</span>
+                        </p>
+                    </div>
 
                     <div class="file-input-wrapper">
-                        <label class="texto-comprovante" for="comprovante"
-                            >Comprovante de Pagamento (PIX):</label
-                        >
+                        <label class="texto-comprovante" for="comprovante">
+                            Comprovante de Pagamento (PIX):
+                        </label>
                         <label for="comprovante" class="file-input-label">
                             <i class="fas fa-upload"></i> Escolher Arquivo
                         </label>
@@ -862,9 +868,11 @@
                     </div>
 
                     <p class="texto-termos">
-                        *Caso encontre alguma dificuldade, entre em contato
-                        comigo no Instagram 🙂 <br /><br />
-                        *Os materiais presentes nessa lojinha foram produzidos
+                        * Caso encontre alguma dificuldade, entre em contato
+                        comigo no Instagram 🙂
+                    </p>
+                    <p class="texto-termos">
+                        * Os materiais presentes nessa lojinha foram produzidos
                         com muito amor e dedicação pela professora Samara Thainá
                         G. Pereira. Você está ciente de que não pode repassá-los
                         para terceiros?
